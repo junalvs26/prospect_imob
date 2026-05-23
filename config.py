@@ -1,7 +1,6 @@
-# Armazena chaves da Anthropic, GHL e Webhooks
 import os
 
-# Puxa as chaves das Variáveis de Ambiente do Sistema (Segurança Máxima)
+# Puxa das variáveis de ambiente do sistema (Segurança Máxima)
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 GHL_API_KEY = os.getenv("GHL_API_KEY", "")
 GHL_LOCATION_ID = os.getenv("GHL_LOCATION_ID", "")
