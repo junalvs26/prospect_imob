@@ -6,7 +6,7 @@ class SDRBrain:
     def __init__(self):
         # A chave de API é puxada automaticamente do arquivo de configuração
         self.client = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY)
-        self.model = "claude-3-5-sonnet-20241022"
+        self.model = "claude-3-5-sonnet-20240620"
 
     def generate_message(self, lead_data: dict, stage: int = 0, history: list = None) -> dict:
         system_prompt = """Você é um empresário e copywriter altamente persuasivo, falando de igual para igual, de dono para dono, com proprietários de imobiliárias. Você é um verdadeiro mago de vendas e agendamento comercial no WhatsApp.
